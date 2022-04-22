@@ -11,10 +11,3 @@ jobs:
       - run:
            name: mobsfscan check
            command: mobsfscan .
-
-# Invoke jobs via workflows
-# See: https://circleci.com/docs/2.0/configuration-reference/#workflows
-workflows:
-  mobsfscan-workflow:
-    jobs:
-      - mobsfscan
